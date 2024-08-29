@@ -5,6 +5,26 @@ import random
 from string import punctuation
 from collections import defaultdict
 
+'''
+Creating a Markov Chain
+The graph should be a python dictionary
+such as this one:
+{
+'Petersburg': ['Grammar', 'Imperial', 'State'],
+'and': ['probability', 'partial', 'higher'],
+'his': ['academics', 'teachers', 'studies'],
+'in': ['Russia', 'most', 'life'],
+}
+a token such as his maps to a token list
+the number of times a token appears in the list
+reflects the likelihood of it following
+the token
+
+try train method should 
+tokenize text input
+iterated the tokens and append the next 
+token to it's list
+'''
 
 class MarkovChain:
     def __init__(self):
