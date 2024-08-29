@@ -1,5 +1,6 @@
 import markov
 
+#added comment
 if __name__ == '__main__':
     chain = markov.MarkovChain()
     chain.train(markov.text)
@@ -9,4 +10,4 @@ if __name__ == '__main__':
     # newly picked word at the tail of the original text
     result = chain.generate(sample_prompt, 15)
 
-    print(result)
+    # print(result)
